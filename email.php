@@ -22,8 +22,8 @@ function smtpmailer($para, $de, $de_nome, $assunto, $corpo) {
 	$mail->SMTPSecure = 'ssl';	// SSL REQUERIDO pelo GMail
 	$mail->Host = 'smtp.gmail.com';	// SMTP utilizado
 	$mail->Port = 465;  		// A porta 587 deverá estar aberta em seu servidor
-	$mail->Username = 'guarino.nicolas.santana@gmail.com';
-	$mail->Password = 'Nnkm@2420';
+	$mail->Username = 'daairosa2017@gmail.com';
+	$mail->Password = '10093454Daai';
 	$mail->SetFrom($de, $de_nome);
 	$mail->Subject = $assunto;
 	$mail->Body = $corpo;
@@ -40,7 +40,7 @@ function smtpmailer($para, $de, $de_nome, $assunto, $corpo) {
 // Insira abaixo o email que irá receber a mensagem, o email que irá enviar (o mesmo da variável GUSER),
 //o nome do email que envia a mensagem, o Assunto da mensagem e por último a variável com o corpo do email.
 
- if (smtpmailer('matheusxx20111@hotmail.com', 'guarino.nicolas.santana@gmail.com', 'TourDreams', 'Recuperar Senha', $Vai)) {
+ if (smtpmailer('matheusxx20111@hotmail.com', 'daairosa2017@gmail.com', 'TourDreams', 'Recuperar Senha', $Vai)) {
 
 	Header("location:index.php"); // Redireciona para uma página de obrigado.
 
