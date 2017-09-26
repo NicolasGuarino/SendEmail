@@ -42,7 +42,7 @@ function smtpmailer($para, $de, $de_nome, $assunto, $corpo) {
 
  if (smtpmailer('matheusxx20111@hotmail.com', 'guarino.nicolas.santana@gmail.com', 'TourDreams', 'Recuperar Senha', $Vai)) {
 
-	Header("location:teste.php"); // Redireciona para uma página de obrigado.
+	Header("location:index.php"); // Redireciona para uma página de obrigado.
 
 }
 if (!empty($error)) echo $error;
