@@ -10,8 +10,8 @@ $Vai= "Nome: $Nome\n\nE-mail: $Email\n\nTelefone: $Fone\n\nMensagem: $Mensagem\n
 
 require_once("phpmailer/class.phpmailer.php");
 
-define('GUSER', 'guarino.nicolas.santana@gmail.com');	// <-- Insira aqui o seu GMail
-define('GPWD', 'Nnkm@2420');		// <-- Insira aqui a senha do seu GMail
+//define('GUSER', 'guarino.nicolas.santana@gmail.com');	// <-- Insira aqui o seu GMail
+//define('GPWD', 'Nnkm@2420');		// <-- Insira aqui a senha do seu GMail
 
 function smtpmailer($para, $de, $de_nome, $assunto, $corpo) {
 	global $error;
@@ -22,8 +22,8 @@ function smtpmailer($para, $de, $de_nome, $assunto, $corpo) {
 	$mail->SMTPSecure = 'ssl';	// SSL REQUERIDO pelo GMail
 	$mail->Host = 'smtp.gmail.com';	// SMTP utilizado
 	$mail->Port = 465;  		// A porta 587 deverá estar aberta em seu servidor
-	$mail->Username = GUSER;
-	$mail->Password = GPWD;
+	$mail->Username = 'guarino.nicolas.santana@gmail.com';
+	$mail->Password = 'Nnkm@2420';
 	$mail->SetFrom($de, $de_nome);
 	$mail->Subject = $assunto;
 	$mail->Body = $corpo;
